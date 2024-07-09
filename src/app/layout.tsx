@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,37 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="relative flex flex-col items-center p-8 h-full min-h-screen">
+          <div className="absolute top-0 left-0 w-full h-full bg-[#ba8cd4] bg-opacity-10 z-[-1]"></div>
+          <div className="absolute top-30 left-80 w-40 h-40 bg-[#8a37b7] z-[-1] bg-opacity-70 rounded-full animate-pulse blur-3xl"></div>
+          <div className="absolute bottom-24 right-32 w-96 h-96 bg-[#8a3ab9] bg-opacity-40 z-[-1] rounded-full animate-pulse blur-3xl"></div>
+          <nav className="flex justify-between items-center w-full">
+            <div className="flex gap-4 items-center">
+              <Image
+                src="/icon.png"
+                alt="Logo"
+                width={48}
+                height={48}
+                className="rounded-lg"
+              />
+              <p className="text-2xl font-semibold">Tacer</p>
+            </div>
+            <ul className="flex space-x-8">
+              <li>
+                <a href="/" className="hover:underline">Home</a>
+              </li>
+              <li>
+                <a href="/privacy" className="hover:underline">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/terms" className="hover:underline">Terms of Service</a>
+              </li>
+            </ul>
+          </nav>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
