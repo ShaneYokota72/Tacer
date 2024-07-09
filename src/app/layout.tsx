@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <meta name="google-site-verification" content="kN2G5y4OfVNDr8v-n4fd24FnY6VLbJj-ztA2Lxog9Uo" />
         <main className="relative flex flex-col items-center p-8 h-full min-h-screen">
           <div className="absolute top-0 left-0 w-full h-full bg-[#ba8cd4] bg-opacity-10 z-[-1]"></div>
           <div className="absolute top-30 left-80 w-40 h-40 bg-[#8a37b7] z-[-1] bg-opacity-70 rounded-full animate-pulse blur-3xl"></div>
