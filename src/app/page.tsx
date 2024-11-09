@@ -20,18 +20,18 @@ export default function Home() {
 
   return (
     <div className="py-24 w-full bg-gradient-to-b from-[#F8F8F8] via-[#CC7AF3] to-[#d9b7e913]">
-      <div className="w-9/12 mx-auto flex flex-col justify-center items-center [&>*]:text-center">
-        <h2 className="text-6xl leading-[90px]">
+      <div className="w-[90%] md:w-9/12 mx-auto flex flex-col justify-center items-center [&>*]:text-center">
+        <h2 className="text-3xl leading-10 md:text-6xl md:leading-[90px]">
           One Click Job Application Tracker 
           <br />
           Optimize job tracking with 
-          <span className="ml-6 items-center gap-2 inline-flex text-tacer align-middle">
+          <span className="ml-4 md:ml-6 items-center gap-2 inline-flex text-tacer align-middle">
             <Image 
               src="/icon.png" 
               alt="Logo" 
-              width={56} 
-              height={56} 
-              className="rounded-md"
+              width={36} 
+              height={36} 
+              className="md:w-14 md:h-14 rounded-md"
             />
             <span className="align-middle font-semibold">Tacer</span>
           </span>
@@ -45,7 +45,7 @@ export default function Home() {
 
         <Button link="https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf?hl=en-US" message="Try Now"/>
 
-        <div className="relative w-4/5 mt-10 group">
+        <div className="relative w-full md:w-4/5 mt-10 group">
           <video 
             ref={videoRef}
             muted 
