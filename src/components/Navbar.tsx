@@ -37,13 +37,13 @@ export default function Navbar() {
                     {isOpen && (
                         <div className="w-full border-t shadow-lg">
                             <div className="flex flex-col gap-4 items-center bg-white py-8">
-                                <Link href="/" className="font-light bg-left-bottom bg-gradient-to-r from-tacer to-tacer bg-[length:0%_1px] bg-no-repeat hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
+                                <Link href="/" className="font-light bg-left-bottom bg-gradient-to-r from-tacer to-tacer bg-[length:0%_1px] bg-no-repeat hover:bg-[length:100%_1px] transition-all duration-500 ease-out" onClick={() => setIsOpen(!isOpen)}>
                                     Home
                                 </Link>
-                                <Link href="/privacy" className="font-light bg-left-bottom bg-gradient-to-r from-tacer to-tacer bg-[length:0%_1px] bg-no-repeat hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
+                                <Link href="/privacy" className="font-light bg-left-bottom bg-gradient-to-r from-tacer to-tacer bg-[length:0%_1px] bg-no-repeat hover:bg-[length:100%_1px] transition-all duration-500 ease-out" onClick={() => setIsOpen(!isOpen)}>
                                     Privacy Policy
                                 </Link>
-                                <Link href="/terms" className="font-light bg-left-bottom bg-gradient-to-r from-tacer to-tacer bg-[length:0%_1px] bg-no-repeat hover:bg-[length:100%_1px] transition-all duration-500 ease-out">
+                                <Link href="/terms" className="font-light bg-left-bottom bg-gradient-to-r from-tacer to-tacer bg-[length:0%_1px] bg-no-repeat hover:bg-[length:100%_1px] transition-all duration-500 ease-out" onClick={() => setIsOpen(!isOpen)}>
                                     Terms of Service
                                 </Link>
                                 <Button
