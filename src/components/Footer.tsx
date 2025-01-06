@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
         </div>
         <div className='border-t-[1px] border-black mb-4'>
-          <h5 className='text-sm text-center my-2'>@2024 ALL RIGHTS REVERSED</h5>
+          <h5 className='text-sm text-center my-2'>@2024 ALL RIGHTS RESERVED</h5>
         </div>
       </div>
     </footer>
