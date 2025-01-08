@@ -11,6 +11,14 @@ export default function page() {
       description: "We use your email address to scan for job application status updates and to log applications to your Google Sheet. We use usage data to analyze trends and improve Tacer's features and performance."
     },
     {
+      title: "Data Sharing and Disclosure",
+      description: "We do not sell, trade, or otherwise transfer your personal information to outside parties. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential."
+    },
+    {
+      title: "Data Retention and Deletion",
+      description: "We will retain your personal information for up to 3 months following the deletion of your account. This allows us to ensure compliance with legal requirements, address disputes, and maintain the integrity of our services. You may also request the deletion of your data at any time by contacting us at shin20040720@gmail.com."
+    },
+    {
       title: "Data Security",
       description: "We prioritize the security of your personal information and use industry-standard measures to protect it from unauthorized access or disclosure."
     },
