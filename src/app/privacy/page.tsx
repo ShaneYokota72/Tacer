@@ -8,7 +8,7 @@ export default function page() {
     },
     {
       title: "How We Use Your Information",
-      description: "We use your email address to scan for job application status updates and to log applications to your Google Sheet. We use usage data to analyze trends and improve Tacer's features and performance."
+      description: "Tacer accesses your Google email address and name to display them in the Chrome extension popup. We also access Gmail contents to assess job application statuses and update your Google Sheets accordingly. Your privacy is important to us, and we ensure compliance with Google's data usage policies."
     },
     {
       title: "Data Sharing and Disclosure",
