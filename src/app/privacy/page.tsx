@@ -19,6 +19,10 @@ export default function page() {
       description: "We will retain your personal information for up to 3 months following the deletion of your account. This allows us to ensure compliance with legal requirements, address disputes, and maintain the integrity of our services. You may also request the deletion of your data at any time by contacting us at shin20040720@gmail.com."
     },
     {
+      title: "Google User Data Usage",
+      description: "Tacer accesses your Google email address and name to display them in the Chrome extension popup. We also access Gmail content to assess job application statuses and update your Google Sheets accordingly. All data processing is secure and occurs solely for the purposes described. Your privacy is important to us, and we ensure compliance with Google's data usage policies."
+    },
+    {
       title: "Data Security",
       description: "We prioritize the security of your personal information and use industry-standard measures to protect it from unauthorized access or disclosure."
     },
