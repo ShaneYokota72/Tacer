@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { PostHogProvider } from './providers'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,9 @@ export default function RootLayout({
         <meta name="google-site-verification" content="M6xnCTTx4TmaijZzxhfdE5swfB9hPX1lijL0OMv6-Zs" />
         <Navbar />
         <main className="flex-grow">
-        {children}
+          <PostHogProvider>
+            {children}
+          </PostHogProvider>
         </main>
         <Footer />
       </body>
