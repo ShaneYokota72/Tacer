@@ -46,7 +46,7 @@ export default function page() {
             <section>
               <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
               <p>
-              If you have any questions or concerns about these Terms of Service, please contact us at shin20040720@gmail.com.
+              If you have any questions or concerns about these Terms of Service, please contact us at tacer.app@gmail.com.
               </p>
             </section>
           </div>
