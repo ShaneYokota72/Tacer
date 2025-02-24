@@ -45,6 +45,11 @@ export default function Home() {
 
         <Button link="https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf?hl=en-US" message="Try Now"/>
 
+        <a href="https://www.producthunt.com/posts/tacer?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tacer" target="_blank" className="mt-6">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=907683&theme=light&t=1740366073663" alt="Tacer - One&#0032;click&#0032;job&#0032;application&#0032;tracker&#0033; | Product Hunt" width="250" height="54" />
+        </a>
+        <p className="text-sm">^ pls go upvote!</p>
+
         <div className="relative w-full md:w-4/5 mt-10 group">
           <video 
             ref={videoRef}

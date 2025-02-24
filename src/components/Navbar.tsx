@@ -55,7 +55,7 @@ export default function Navbar() {
                     )}
                 </div>
             ) : (
-                <div className="w-full flex py-8 px-20 items-center justify-between drop-shadow-lg bg-white">
+                <div className="w-full flex py-4 px-20 items-center justify-between drop-shadow-lg bg-white">
                     <div className="flex items-center gap-4">
                         <Image src="/icon.png" alt="Logo" width={48} height={48} className="rounded-lg" />
                         <h1 className="text-3xl font-semibold text-dark-tacer">Tacer</h1>

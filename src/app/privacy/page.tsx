@@ -16,7 +16,7 @@ export default function page() {
     },
     {
       title: "Data Retention and Deletion",
-      description: "We will retain your personal information for up to 3 months following the deletion of your account. This allows us to ensure compliance with legal requirements, address disputes, and maintain the integrity of our services. You may also request the deletion of your data at any time by contacting us at shin20040720@gmail.com."
+      description: "We will retain your personal information for up to 3 months following the deletion of your account. This allows us to ensure compliance with legal requirements, address disputes, and maintain the integrity of our services. You may also request the deletion of your data at any time by contacting us at tacer.app@gmail.com."
     },
     {
       title: "Data Security",
@@ -49,7 +49,7 @@ export default function page() {
             <section>
               <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
               <p>
-                If you have any questions or concerns about our Privacy Policy or data practices, please contact us at shin20040720@gmail.com.
+                If you have any questions or concerns about our Privacy Policy or data practices, please contact us at tacer.app@gmail.com.
               </p>
             </section>
           </div>
