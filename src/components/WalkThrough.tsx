@@ -25,10 +25,10 @@ export default function WalkThrough({
 }: WalkThroughProps) {
     return (
         <div className='relative w-full py-28 md:py-0 md:w-3/4 lg:w-[70%] xl:w-2/3 min-h-screen md:ml-auto md:flex md:items-center' key={key}>
-            <div className='px-20 mb-20 md:pl-0 md:mb-0 md:pr-12 lg:pr-32 xl:pr-44'>
+            <div className='px-12 mb-12 md:pl-0 md:mb-0 md:pr-12 lg:pr-32 xl:pr-44'>
                 <Image src={icon} alt='Tacer Icon' width={72} height={72} className={ clsx('w-18 h-18 rounded-[14px]', iconClassname)}/>
-                <h3 className='mt-6 text-3xl font-semibold'>{title}</h3>
-                <p className='mt-16 text-xl font-medium'>
+                <h3 className='mt-4 md:mt-6 text-3xl font-semibold'>{title}</h3>
+                <p className='mt-8 md:mt-16 text-xl font-medium'>
                     {
                         message.map((msg, idx) => {
                             const includesTacerIcon = msg.includes('[TACER_ICON]')
@@ -84,7 +84,7 @@ export default function WalkThrough({
                     />
                 )
             }
-            <div className={clsx('bg-[url("../../public/MacWallpaper.jpg")] m-8 p-12 rounded-xl md:m-0 md:bg-none md:p-0 md:self-start md:hidden', title === 'Auto Log Applications' && 'py-32 md:py-0')}>
+            <div className={clsx('bg-[url("../../public/MacWallpaper.jpg")] my-8 mx-12 p-12 rounded-xl md:m-0 md:bg-none md:p-0 md:self-start md:hidden', title === 'Auto Log Applications' && 'py-32 md:py-0')}>
                 {
                     mediaPath.endsWith('.mp4') ? (
                         <video

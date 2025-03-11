@@ -60,16 +60,16 @@ export default function HeroSection() {
         <>
             <div className='relative flex justify-between items-center h-fit text-text font-semibold'>
                 <p className='w-fit mx-auto text-sm px-4 py-2 rounded-full bg-background drop-shadow-tacerPurple'>🔥 V 0.0.13 Out Now</p>
-                <Link href="https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf" target='blank' className="absolute top-0 right-8 w-fit px-3 py-2 text-sm rounded-[8px] bg-background drop-shadow-tacerPurple hover:cursor-pointer">Get Started</Link>
+                <Link href="https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf" target='blank' className="hidden md:block absolute top-0 right-8 w-fit px-3 py-2 text-sm rounded-[8px] bg-background drop-shadow-tacerPurple hover:cursor-pointer">Get Started</Link>
             </div>
             <Image
                 src={'/icon.svg'}
                 alt="Tacer Icon"
                 width={48}
                 height={48}
-                className='mx-auto w-36 h-36 rounded-[8px] drop-shadow-xl mt-10'
+                className='mx-auto w-20 h-20 md:w-36 md:h-36 rounded-[8px] drop-shadow-xl mt-10'
             />
-            <h2 className="text-6xl font-semibold leading-[77px] tracking-tighter text-center mt-12 w-4/5 mx-auto">
+            <h2 className="text-3xl md:text-6xl font-semibold md:leading-[77px] tracking-tighter text-center mt-12 w-4/5 mx-auto">
                 One Click Job Application Tracker 
                 <br />
                 Optimize job tracking with 

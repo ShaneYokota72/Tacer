@@ -21,7 +21,7 @@ const WALKTHROUGH_DATA = [
     },
     {
         icon: '/TacerContinueIcon.svg',
-        iconClassname: 'w-[148px] h-auto',
+        iconClassname: 'w-[148px] h-auto -mb-1',
         title: 'Continue Your Job Search',
         message: ['See all application on extension popup, chart, and spreadsheet.','All applications are auto-tracked and updated every 24 hours!'],
         mediaPath: '/TacerContinueYourJobSearch.png',
