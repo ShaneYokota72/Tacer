@@ -25,32 +25,34 @@ export default function page() {
   ]
 
   return (
-    <div className='w-3/5 mx-auto py-8'>
-      <h1 className="text-3xl font-bold mb-8">Terms of Service
-      </h1>
-        <div className="space-y-8">
-          <p>
-            By using Tacer, you agree to comply with these Terms of Service and our Privacy Policy.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {termsFeatures.map((feature, index) => (
-              <div key={index} className="space-y-2">
-                <h2 className="text-xl font-semibold">{feature.title}</h2>
-                <p>{feature.description}</p>
-              </div>
-            ))}
-          </div>
+    <div className='w-full bg-subtle'>
+      <div className='w-3/5 mx-auto py-8'>
+        <h1 className="text-3xl font-bold mb-8">Terms of Service
+        </h1>
+          <div className="space-y-12">
+            <p>
+              By using Tacer, you agree to comply with these Terms of Service and our Privacy Policy.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {termsFeatures.map((feature, index) => (
+                <div key={index} className="space-y-4">
+                  <h2 className="text-xl font-semibold">{feature.title}</h2>
+                  <p>{feature.description}</p>
+                </div>
+              ))}
+            </div>
 
-          <div className="space-y-6">
-            <section>
-              <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
-              <p>
-              If you have any questions or concerns about these Terms of Service, please contact us at tacer.app@gmail.com.
-              </p>
-            </section>
+            <div className="space-y-6">
+              <section>
+                <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
+                <p>
+                If you have any questions or concerns about these Terms of Service, please contact us at tacer.app@gmail.com.
+                </p>
+              </section>
+            </div>
           </div>
-        </div>
+      </div>
     </div>
   )
 }

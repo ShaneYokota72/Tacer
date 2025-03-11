@@ -1,33 +1,42 @@
-// Footer.tsx
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Footer() {
-  return (
-    <footer className='w-full mt-8'>
-      <div className='w-4/5 mx-auto'>
-        <div className='flex pt-4 pb-10'>
-          <div className='w-1/2 px-4 md:pl-16'>
-            <div className='flex items-center gap-4'>
-                <Image src='/icon.png' alt='Logo' width={48} height={48} className='rounded-lg' />
-                <h4 className='text-3xl font-semibold text-dark-tacer'>Tacer</h4>
+    return (
+        <footer className='w-full py-8 flex flex-col gap-6 items-center text-xs bg-subtle'>
+            <div className='w-fit flex items-center gap-5'>
+                <Link 
+                    href='/' className='hover:cursor-pointer'
+                >
+                    Home
+                </Link>
+                <Link 
+                    href='/privacy' className='hover:cursor-pointer'
+                >
+                    Privacy Policy
+                </Link>
+                <Link 
+                    href='/terms' 
+                    className='hover:cursor-pointer'
+                >
+                    Terms of Service
+                </Link>
+                <Link 
+                    href='https://x.com/tacer_app' 
+                    target='blank'
+                    className='hover:cursor-pointer'
+                >
+                    <Image
+                        src='/XIcon.svg'
+                        alt='X Icon'
+                        width={16}
+                        height={16}
+                        className='w-auto h-4'
+                    />
+                </Link>
             </div>
-            <p className='mt-8'>One click job application tracker!</p>
-          </div>
-          <div className='w-1/2 px-4 md:pl-16'>
-            <h3 className='text-xl font-semibold'>Pages</h3>
-            <div className='mt-6 flex flex-col gap-3'>
-              <Link href='/' className='w-fit font-light bg-left-bottom bg-gradient-to-r from-tacer to-tacer bg-[length:0%_1px] bg-no-repeat hover:bg-[length:100%_1px] transition-all duration-500 ease-out'>Home</Link>
-              <Link href='/privacy' className='w-fit font-light bg-left-bottom bg-gradient-to-r from-tacer to-tacer bg-[length:0%_1px] bg-no-repeat hover:bg-[length:100%_1px] transition-all duration-500 ease-out'>Privacy Policy</Link>
-              <Link href='/terms' className='w-fit font-light bg-left-bottom bg-gradient-to-r from-tacer to-tacer bg-[length:0%_1px] bg-no-repeat hover:bg-[length:100%_1px] transition-all duration-500 ease-out'>Terms of Service</Link>
-            </div>
-          </div>
-        </div>
-        <div className='border-t-[1px] border-black mb-4'>
-          <h5 className='text-sm text-center my-2'>@2025 ALL RIGHTS RESERVED</h5>
-        </div>
-      </div>
-    </footer>
-  )
+            <p>@2025 ALL RIGHTS REVERSED</p>
+        </footer>
+    )
 }
