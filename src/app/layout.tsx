@@ -8,7 +8,21 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Tacer",
-  description: "One click job application tracker",
+  description: "Tacer landing page. One Click Job Application Tracker!",
+  openGraph: {
+    title: "Tacer",
+    description: "Tacer landing page. One Click Job Application Tracker!",
+    url: "https://tacer.vercel.app",
+    type: "website",
+    images: [
+      {
+        url: "https://tacer.vercel.app/WebsiteThumbnail.png",
+        width: 1200,
+        height: 630,
+        alt: "Tacer Preview",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
