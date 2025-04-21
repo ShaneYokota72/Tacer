@@ -59,7 +59,7 @@ export default function HeroSection() {
     return (
         <>
             <div className='relative flex justify-between items-center h-fit text-text font-semibold'>
-                <p className='w-fit mx-auto text-sm px-4 py-2 rounded-full bg-background drop-shadow-tacerPurple'>🔥 V 0.0.13 Out Now</p>
+                <Link href={"/changelog/0.0.14"} className='w-fit mx-auto text-sm px-4 py-2 rounded-full bg-background drop-shadow-tacerPurple'>🔥 V 0.0.14 Out Now</Link>
                 <Link href="https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf" target='blank' className="hidden md:block absolute top-0 right-8 w-fit px-3 py-2 text-sm rounded-[8px] bg-background drop-shadow-tacerPurple hover:cursor-pointer">Get Started</Link>
             </div>
             <Image
