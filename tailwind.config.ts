@@ -30,7 +30,17 @@ const config: Config = {
         "background": "#B05DE5",
         "tacer": "#A63AD9",
         "dark-tacer": "#8628B4"
-      }
+      },
+      animation: {
+        'spin-slow': 'spin-slow 4s linear infinite',
+        'move': 'move 5s linear infinite',
+      },
+      keyframes: {
+        'move': {
+          '0%': { offsetDistance: '0%' },
+          '100%': { offsetDistance: '100%' },
+        }
+      },
     },
   },
   plugins: [],

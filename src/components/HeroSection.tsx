@@ -6,6 +6,7 @@ import ScrollTrigger from 'gsap/src/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 
 export default function HeroSection() {
     gsap.registerPlugin(useGSAP)
@@ -59,8 +60,17 @@ export default function HeroSection() {
     return (
         <>
             <div className='relative flex justify-between items-center h-fit text-text font-semibold'>
-                <Link href={"/changelog/0.0.14"} className='w-fit mx-auto text-sm px-4 py-2 rounded-full bg-background drop-shadow-tacerPurple'>🔥 V 0.0.14 Out Now</Link>
-                <Link href="https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf" target='blank' className="hidden md:block absolute top-0 right-8 w-fit px-3 py-2 text-sm rounded-[8px] bg-background drop-shadow-tacerPurple hover:cursor-pointer">Get Started</Link>
+                <div className='mx-auto overflow-hidden p-[1.5px] relative rounded-full bg-gradient-to-r from-[#35293D] to-[#582778]'>
+                    <div style={{"offsetPath": "rect(0% auto 100% auto)"}} className='animate-move bg-gradient-radial from-[#f0cbff] to-[#35293D] inset-0 w-[52px] h-[52px] absolute rotate-45'/>
+                    <Link href={"/changelog/0.0.14"} className='inline-block z-10 relative w-fit h-fit text-sm px-4 py-2 rounded-full bg-gradient-to-r from-[#35293D] to-[#582778]'>🔥 V 0.0.14 Out Now</Link>
+                </div>
+                
+                <Link href="https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf" target='blank' className="hidden md:flex items-center gap-2 absolute top-0 right-8 w-fit px-4 py-2 text-sm rounded-[8px] bg-gradient-to-r from-[#35293D] to-[#582778] drop-shadow-tacerPurple hover:cursor-pointer group">
+                    <span className='ml-2 mr-8'>Get Started</span>
+                    <div className='absolute right-2 flex items-center justify-center p-1 w-6 bg-white rounded-md group-hover:w-[calc(100%-1rem)] transition-all duration-300 ease-in-out'>
+                        <ArrowRight className='w-4 h-4' color='#582778'/>
+                    </div>
+                </Link>
             </div>
             <Image
                 src={'/icon.svg'}
