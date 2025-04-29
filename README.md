@@ -12,8 +12,6 @@ This repo is just for the landing page. The repo for the extention is private ðŸ
 
 I used `Plasmo`, `TailwindCSS`, `Express.js`, `AWS`, and `Vercel` to build the website/extension.
 
-
 Access the chrome extension here: [Tacer - Chrome Web Store](https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf?hl=en-US)
 
-Access the landing page here: [Tacer - Landing Page](https://tacer.vercel.app/)
-
+Access the landing page here: [Tacer - Landing Page](https://tacer.click/)
