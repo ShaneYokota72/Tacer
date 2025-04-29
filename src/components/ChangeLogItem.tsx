@@ -1,22 +1,27 @@
 import React from 'react'
 import { ElementDetails } from '@/utils/changeLog'
+import clsx from 'clsx';
 
 export default function ChangeLogItem({ item }: { item: ElementDetails }) {
-    switch (item.type) {
+    const { type, content, className } = item;
+    switch (type) {
         case 'heading':
-          return <h3 className="text-xl font-bold mb-3">{item.content}</h3>;
+          return <h3 className={clsx("text-xl font-bold mb-3", className)}>{content}</h3>;
           
         case 'subheading':
-          return <h4 className="text-lg font-semibold mb-3">{item.content}</h4>;
+          return <h4 className={clsx("text-lg font-semibold mb-3", className)}>{content}</h4>;
           
         case 'normal':
-          return <p className="mb-2 text-[#5c5c5c]">{item.content}</p>;
+          return <p className={clsx("mb-2 text-[#5c5c5c]", className)}>{content}</p>;
           
+        case 'sidenote':
+          return <p className={clsx("text-sm text-[#6e6e6e] mb-2", className)}>{content}</p>;
+
         case 'detail':
-          return <p className="text-xs text-[#8b8b8b] mb-2">{item.content}</p>;
+          return <p className={clsx("text-xs text-[#8b8b8b] mb-2", className)}>{content}</p>;
           
         case 'emphasis':
-          return <p className="text-base font-semibold mb-2">{item.content}</p>;
+          return <p className={clsx("text-base font-semibold mb-2", className)}>{content}</p>;
           
         case 'video':
           return (
@@ -24,7 +29,7 @@ export default function ChangeLogItem({ item }: { item: ElementDetails }) {
                   <video 
                       className="rounded-lg shadow-md w-full h-auto" 
                       src={item.url as string} 
-                      title={item.content} 
+                      title={content} 
                       autoPlay
                       muted
                       loop
@@ -40,7 +45,7 @@ export default function ChangeLogItem({ item }: { item: ElementDetails }) {
                 alt={item.alt} 
                 className="rounded-lg shadow-md max-w-full"
               />
-              <p className="text-sm text-gray-600 mt-1">{item.content}</p>
+              <p className="text-sm text-gray-600 mt-1">{content}</p>
             </div>
           );
           
@@ -50,7 +55,7 @@ export default function ChangeLogItem({ item }: { item: ElementDetails }) {
           
           return (
             <div className="mb-4">
-              <p className="mb-2 font-medium">{item.content}</p>
+              <p className="mb-2 font-medium">{content}</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {urls?.map((url, idx) => (
                   <img 
@@ -73,12 +78,12 @@ export default function ChangeLogItem({ item }: { item: ElementDetails }) {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 underline"
               >
-                {item.content}
+                {content}
               </a>
             </div>
           );
           
         default:
-          return <p>{item.content}</p>;
+          return <p>{content}</p>;
     }
 }
