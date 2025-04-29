@@ -62,7 +62,7 @@ export default function HeroSection() {
             <div className='relative flex justify-between items-center h-fit text-text font-semibold'>
                 <div className='mx-auto overflow-hidden p-[1.5px] relative rounded-full bg-gradient-to-r from-[#35293D] to-[#582778]'>
                     <div style={{"offsetPath": "rect(0% auto 100% auto)"}} className='animate-move bg-gradient-radial from-[#f0cbff] to-[#35293D] inset-0 w-[52px] h-[52px] absolute rotate-45'/>
-                    <Link href={"/changelog/0.0.14"} className='inline-block z-10 relative w-fit h-fit text-sm px-4 py-2 rounded-full bg-gradient-to-r from-[#35293D] to-[#582778]'>🔥 V 0.0.14 Out Now</Link>
+                    <Link href={"/changelog/0.0.15"} className='inline-block z-10 relative w-fit h-fit text-sm px-4 py-2 rounded-full bg-gradient-to-r from-[#35293D] to-[#582778]'>🔥 V 0.0.15 Out Now</Link>
                 </div>
                 
                 <Link href="https://chromewebstore.google.com/detail/tacer/jolmhpelmbiobcnaiadpblmekgidbcmf" target='blank' className="hidden md:flex items-center gap-2 absolute top-0 right-8 w-fit px-4 py-2 text-sm rounded-[8px] bg-gradient-to-r from-[#35293D] to-[#582778] drop-shadow-tacerPurple hover:cursor-pointer group">
